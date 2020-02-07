@@ -1,2 +1,75 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Six+Caps&display=swap");
+
+body {
+    color: purple;
+}
+
+h1 {
+    color: blue;
+}
+
+@keyframes wheelHueColor {
+    from, to { color: rgb(236,100,75); }
+    10%      { color: rgb(219,10,91); }
+    20%      { color: rgb(174,168,211); }
+    30%      { color: rgb(89,171,227); }
+    40%      { color: rgb(37,116,169); }
+    50%      { color: rgb(3,201,169); }
+    60%      { color: rgb(22,160,133); }
+    70%      { color: rgb(233,212,96); }
+    80%      { color: rgb(243,156,18); }
+    90%      { color: rgb(236,240,241); }
+}
+
+.example {
+    color: rgb(236,100,75);
+    animation: wheelHueColor 20s infinite;
+    text-align: center;
+    font-size: 200px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+.title {
+    color: green;
+}
+
+.pad {
+    background-color: rgb(75, 153, 199);
+}
+
+.brand {
+    background-color: grey;
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.brand img {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+#launch-pad {
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(4,150px);
+    background-color: black;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: min-content;
+    margin: auto;
+    padding: 40px;
+}
+
+.pad-title {
+    margin-right: 20px;
+}
+
+.pad:hover {
+    background-color: darkviolet;
+}
